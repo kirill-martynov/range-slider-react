@@ -1,0 +1,30 @@
+.container {
+  position: relative;
+
+  width: 100%;
+  height: 6px;
+}
+
+.bar,
+.progress {
+  position: absolute;
+
+  height: 100%;
+
+  border-radius: 6px;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  background-color: #eaeaea;
+}
+
+.progress {
+  background-color: #005ffd;
+
+  transition: width cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+}

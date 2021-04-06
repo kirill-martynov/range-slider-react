@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import { RangeSlider } from './RangeSlider';
+
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+const SCALE = Array.from(new Array(5).keys());
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <RangeSlider scale={SCALE} />
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
